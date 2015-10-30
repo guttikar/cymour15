@@ -5,7 +5,7 @@ title: Cymour Cycling Company
 description: > # this means to ignore newlines until "baseurl:"
   Cymour is the best place in the world for 
   anything related to cycling!
-baseurl: /cymour # the subpath of your site, e.g. /blog/
+baseurl: /cymour15 # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 # Build settings
