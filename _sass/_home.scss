@@ -1,8 +1,9 @@
 
 .home {
 	width: 100%;
+	height: 100vh;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;	
-	@include outer-container;
+	background: url("../img/home/home_bg.jpg") center center no-repeat;
 }

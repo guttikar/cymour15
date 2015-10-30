@@ -1,0 +1,117 @@
+/**
+ * Site sidebar
+ */
+aside {
+    
+    background-color: $aside-background-color; 
+   	
+    position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 12rem;
+	padding: 0 1em; 
+	z-index: 1000;
+	@include media($tablet) {
+		background: transparent;
+	}
+}
+
+
+.top-nav {
+	height: 100%;
+	position: relative;
+	overflow: hidden; 
+	
+
+	
+	.burger {
+		position: absolute;
+		right: 0;
+		top: 1em;
+		display: none;
+		background: url(../img/burger-cross.svg) no-repeat 0 0;
+		background-color: inherit;
+		@include size(20px);
+		border: 0;		
+		overflow: hidden;
+		z-index: 99999;
+		cursor: pointer;
+		
+		@include media($tablet) {
+			display: block;
+		}
+	}
+
+	ul {	
+		list-style-type: none;
+		position: absolute;
+		display: flex;
+		-webkit-flex-flow: column nowrap; 
+		 -ms-flex-flow: column nowrap; 
+		 flex-flow: column nowrap;  
+		-webkit-justify-content: space-around; 
+		justify-content: space-around; 
+		width: 100%;
+		// margin: 0 auto;
+		height: 100%;
+		// border: 1px solid green;
+		overflow: hidden; 
+	}
+	
+	li {
+		display: block;
+		width: 100%;
+		// border: 1px solid yellow; 
+		height: 8%;
+		// @include media($tablet) {
+		// 	width: 100%;
+		// 	padding-left: 10%; 
+		// }
+		a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-indent: -9999px;	
+			// border: 1px solid red; 
+			
+		}
+	}
+
+	
+	.aside-logo	{
+		background: url("../img/cymour_logo_NO_BG.svg") no-repeat center center;	
+	}
+	
+	.rentals-icon {
+		background: url("../img/rentals_icon.svg") no-repeat center center;	
+	}
+
+	.servicing-icon {
+		background: url("../img/servicing_icon.svg") no-repeat center center;	
+	}
+	
+	.rides-icon {
+		background: url("../img/rides_icon.svg") no-repeat center center;	
+	}
+	
+	.tours-icon {
+		background: url("../img/tours_icon.svg") no-repeat center center;	
+	}
+
+	.events-icon {
+		background: url("../img/events_icon.svg") no-repeat center center;	
+	}
+
+	.contact-icon {
+		background: url("../img/contact_icon.svg") no-repeat center center;	
+	}
+	.aside-logo, .rentals-icon, .servicing-icon, .rides-icon, .tours-icon, .events-icon, .contact-icon {
+		background-size: contain;
+	}
+	@include media($tablet) {
+		.aside-logo {
+			background-size: 90% 100%;
+		}	
+	}
+}

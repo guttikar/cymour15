@@ -1,4 +1,24 @@
 encoding: utf-8
-baseurl: /cymour
-exclude: ['README.md']
+
+# Site settings
+title: Cymour Cycling Company
+description: > # this means to ignore newlines until "baseurl:"
+  Cymour is the best place in the world for 
+  anything related to cycling!
+baseurl: /cymour # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+# Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+
+# Ignore files and folders
+exclude: ['README.md']
+permalink: pretty
+
+#social media links
+facebook: "https://www.facebook.com/cymourholidays"
+twitter: "http://twitter.com/cymour"
+instagram: "http://instagram.com/cymour"
+strava: "http://strava.com/cymour"

@@ -1,9 +1,9 @@
 .sliding-panel-content {  
     @include media($tablet) {
-    $action-color: $header-background-color !default;
+    $action-color: $aside-background-color !default;
     $dark-gray: #777 !default;
     $sliding-panel-border-color: #fefefe;
-    $sliding-panel-background: $header-background-color;
+    $sliding-panel-background: $aside-background-color;
     $sliding-panel-color: #fff;
     $sliding-panel-border: 1px solid $sliding-panel-border-color;
     $sliding-panel-background-hover: $action-color;
@@ -18,7 +18,8 @@
     z-index: 999999;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-
+  
+    
     ul {
       padding: 0;
       margin: 0;
@@ -29,16 +30,16 @@
     }
 
     li a {
-      border-bottom: $sliding-panel-border;
+      // border-bottom: $sliding-panel-border;
       color: $sliding-panel-color;
-      display: block;
-      font-weight: bold;
-      padding: 1em;
-      text-decoration: none;
+      // display: block;
+      // font-weight: bold;
+      // // padding: 1em;
+      // text-decoration: none;
 
-      &:focus {
-        background-color: $sliding-panel-background-focus;
-      }
+      // &:focus {
+      //   background-color: $sliding-panel-background-focus;
+      // }
 
       &:hover {
         background-color: $sliding-panel-background-hover;

@@ -6,26 +6,27 @@ footer {
 	margin-bottom: 0;
 	padding:0;
 	overflow: hidden;
+	position: fixed;
+	bottom: 4em;
+	left: 0;
 }
 
 .footer-data {
 	width: 100%;
 	min-height: 4em;
-	background-color: #ccc;	
+	background-color: transparent;	
 	text-transform: Capitalize;
-	font-size: 0.75em;
-	color: #333;
+	font-size: 1em;
+	color: #ccc;
 	padding-top: 1em;
 	overflow: hidden;
 	position: relative;
 	address {
-		@include outer-container;
 		padding: 1em;
 	}
 }
 
 .footer-nav {
-	@include outer-container;
 		> a {
 		display: inline-block;
 		float: left; 
