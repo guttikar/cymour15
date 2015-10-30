@@ -1,0 +1,4 @@
+encoding: utf-8
+baseurl: /cymour
+exclude: ['README.md']
+markdown: kramdown

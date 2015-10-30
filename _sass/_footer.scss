@@ -1,0 +1,44 @@
+footer {
+	// width: 100%;
+	margin-top: $spacing-unit;
+	display: block;
+	clear: both;
+	margin-bottom: 0;
+	padding:0;
+	overflow: hidden;
+}
+
+.footer-data {
+	width: 100%;
+	min-height: 4em;
+	background-color: #ccc;	
+	text-transform: Capitalize;
+	font-size: 0.75em;
+	color: #333;
+	padding-top: 1em;
+	overflow: hidden;
+	position: relative;
+	address {
+		@include outer-container;
+		padding: 1em;
+	}
+}
+
+.footer-nav {
+	@include outer-container;
+		> a {
+		display: inline-block;
+		float: left; 
+		padding-right: 1em;
+		text-decoration: none;
+	}
+
+}
+.design {
+	// border: 1px solid red; 
+	//float: right;
+	color: white;
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}

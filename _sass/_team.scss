@@ -1,0 +1,95 @@
+.employees, .supportstaff {
+	@include outer-container; 
+
+	display: flex;	
+	padding: 2em 0;
+	> h1 {
+		padding-left: 5em;
+		font-weight: 300;
+		width: 100%;
+	}
+}
+.employees {
+	-webkit-flex-flow: column wrap;
+	 -ms-flex-flow: column wrap;
+	 flex-flow: column  wrap;
+	 // width: 100%;
+}
+
+.employee {
+	// width: 90vw;
+	padding: 3em 0 0 0;
+	// margin-left: 3em;
+	img {
+		// display: block;
+		@include shift(1);
+		width: 20em;
+		float: left;
+	}
+}
+
+.profile {
+	width: 40%;
+	display: inline-block;
+	padding-left: 3em;
+	float: left;
+	p {
+		border-top: 1px solid #333; 
+	}
+}
+
+.supportstaff {
+	-webkit-flex-flow: row wrap; 
+	-ms-flex-flow: row wrap; 
+	flex-flow: row wrap; 
+    -webkit-justify-content: space-around; 
+	justify-content:  space-around;
+
+	margin-top: 3em;
+}
+.staff {
+	padding-top: 2em;
+	width: 25%;
+	text-align: center;
+	> h2 {
+		padding-top: 1em;
+	}
+}
+
+@include media($tablet) {
+	.employees, .supportstaff > h1 {
+		padding-left: 2em;
+	}
+	.employee {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		> img {
+			margin-left: 2.5em;
+			width: 35%;
+		}
+	}
+	
+	.profile {
+		width: 50%;
+	}
+}
+
+@include media($mobile) {
+	.employees {
+		padding-left: 0;
+		> h1 {
+			padding-left: 8vw;
+		}	
+	}
+	.employee > img {
+		width: 80%;
+	}
+	.profile {
+		width: 80%;
+		padding-top: 1em;
+		h1 {
+			font-size: 2em; 
+		}
+	}
+}

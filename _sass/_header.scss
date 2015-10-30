@@ -1,0 +1,105 @@
+/**
+ * Site header
+ */
+header {
+    padding: .5em 0 .5em 0; 
+    background-color: $header-background-color; 
+    -webkit-box-shadow: 0 10px 10px #888;
+    box-shadow: 0 10px 10px #888;
+}
+
+.top-nav {
+	// padding: 0.3rem 1rem 0.3rem 0;
+	@include outer-container;
+	position: relative;
+	// border: 1px solid green; 
+	.logo {
+		@include span-columns(2);
+		@include shift(0.5);
+
+		@include media($tablet) {
+		  // @include span-columns(5);
+		  // @include shift(0);
+		  width: 200px;
+		}
+	}
+	
+	.burger {
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		display: none;
+		background: url(../img/burger-cross.svg) no-repeat 0 0;
+		background-color: inherit;
+		@include size(20px);
+		border: 0;		
+		overflow: hidden;
+		z-index: 99999;
+		cursor: pointer;
+		padding-right: 10px;
+		
+		@include media($tablet) {
+			display: block;
+		}
+	}
+
+	ul {	
+		list-style-type: none;
+		float: right;
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		right: 1em;
+		transform: translateY(-50%);
+		// border: 1px solid red;
+		overflow: hidden; 
+		@include media($tablet) {
+			right: 2em;
+		// 	// transform: translateY(0);
+		// 	// float: none;
+		}
+		
+		li {
+			text-decoration: none;
+			text-transform: uppercase;
+			text-align: center; 
+			display: inline-block;
+			margin-right: 2em;	
+			// border: 1px solid blue; 
+			// @include span-columns(1.5);
+			@include media($tablet) {
+				display: block;
+				width: 100%;
+				// clear: both;
+				// margin: 10px;
+				// padding-right: 20px;
+				// border-bottom: 1px solid #ccc;
+			}
+
+			a{
+				font-weight: bold;
+				text-align: center;  
+				
+				// border: 1px solid red; 
+				
+				color: #eee;
+				letter-spacing: 0.125em;    
+			}
+			a:hover {
+				color: #FFCF00;
+				border-bottom: solid 1px #FFCF00;
+			}
+			.panel-logo {
+				display: none;
+				background: url(../img/cymour_logo.svg) no-repeat center/contain;	
+				text-indent: -9999px;	
+				@include media($tablet) {
+					display: block;
+					@include size(100%);
+				}
+			}
+
+		}
+
+	}	
+}
