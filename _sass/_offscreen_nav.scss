@@ -3,7 +3,7 @@
     $action-color: $aside-background-color !default;
     $dark-gray: #777 !default;
     $sliding-panel-border-color: #fefefe;
-    $sliding-panel-background: $aside-background-color;
+    $sliding-panel-background: rgba(10,10,10,0.8);
     $sliding-panel-color: #fff;
     $sliding-panel-border: 1px solid $sliding-panel-border-color;
     $sliding-panel-background-hover: $action-color;
@@ -63,9 +63,8 @@
   z-index: 999998;
 
   &.is-visible {
-    opacity: 0.4;
+    opacity: 0.8;
     visibility: visible;
-    // display: block;
   }
 }
 
@@ -75,8 +74,13 @@
   cursor: pointer;
   position: relative;
   outline: none;
-
-  img {
-    height: 1.3em;
+  
+  &.is-visible {
+    background-position: 100% 0; 
+    z-index: 999999; 
   }
+
+  // img {
+  //   height: 1.3em;
+  // }
 }
