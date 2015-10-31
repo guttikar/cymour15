@@ -3,17 +3,16 @@ footer {
 	margin-top: $spacing-unit;
 	display: block;
 	clear: both;
-	margin-bottom: 0;
 	padding:0;
 	overflow: hidden;
 	position: fixed;
-	bottom: 4em;
+	bottom: 2em;
 	left: 0;
 }
 
 .footer-data {
 	width: 100%;
-	min-height: 4em;
+	min-height: 3em;
 	background-color: transparent;	
 	text-transform: Capitalize;
 	font-size: 1em;
@@ -21,12 +20,9 @@ footer {
 	padding-top: 1em;
 	overflow: hidden;
 	position: relative;
-	address {
-		padding: 1em;
-	}
 }
 
-.footer-nav {
+.social-nav {
 		> a {
 		display: inline-block;
 		float: left; 
