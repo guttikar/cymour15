@@ -5,5 +5,118 @@
 	margin: 0;
 	padding: 0;
 	overflow: hidden;	
-	background: url("../img/home/home_bg.jpg") center center no-repeat;
+	background: url(../img/home/home_bg.jpg) center center no-repeat;
+}
+
+.banner {
+		display: block;
+		margin: 5em 12em 5em auto;
+		// border: 1px solid red;		  
+	}
+
+#homepagelogo {
+	display: block;
+	width: 50em;
+	margin: 0 auto;
+	position: relative; 
+}
+
+@media screen and (max-width: 70rem) {
+	#homepagelogo {	
+		width: 80%;
+		margin: 4rem auto; 
+	}
+}
+
+@media screen and (max-width: 50em) {
+	.banner {
+		margin: 1em;
+	}
+}
+
+.st0{
+	fill:#FFCF00; 
+}
+
+.st1{
+	fill:#FFFFFF;		
+}
+.cycle-and-lines {
+	position: relative;
+	animation: slideInFromRight 2s ease-in-out;
+}
+
+@keyframes slideInFromRight {
+    0%   {transform: translateX(9999px);}
+    90%  {transform: translateX(-50px);}
+    100% {transform: translateX(0px);}
+}
+
+@keyframes fadeIn {
+    0%   {opacity:0}
+    50%  {opacity: 1}
+    75%  {opacity: 0.6} 
+    100% {opacity: 1}
+}
+
+.action-wrapper {
+	margin-right: 12em;
+	@include media($tablet) {
+		margin-right: 0;
+	}
+}
+
+.action-buttons {
+	list-style-type: none;
+	text-decoration: none;
+	display: flex;
+	-webkit-justify-content: space-between; 
+	justify-content: space-between;
+	-webkit-align-items: bottom; 
+	align-items: bottom; 
+	width: 80%;
+	// border: 1px solid green;	
+	margin: 0 auto;
+	// overflow: hidden;
+	li {
+		width: 25%;
+		padding-top: 25%;
+		position: relative; 
+		// overflow: hidden;
+		text-align: center;
+		div, a {
+			position: absolute;
+			left:0;
+			width: 100%;
+			
+		}
+		div {
+			top: 0;
+			height: 100%;
+			background: url(../img/home/tire.svg) no-repeat 0 0;
+			-webkit-background-size: contain;
+			-o-background-size: contain;
+			background-size: contain;
+			// -webkit-box-shadow: rgba(0,0,0,0.9); 
+			//  box-shadow: rgba(0,0,0,0.9);  
+			// border: 1px solid yellow;
+		}
+		
+		a {
+			top: 50%;
+			text-transform: uppercase;
+			text-align: center;
+			color: white;
+			font-size: 1.75vw;
+			font-weight: bold; 
+			transform: translateY(-53%); 
+			// border: 1px dashed blue;
+		}
+		a:hover {
+			color: rgba(255,207,0,0.9);
+			font-style: italic;
+			text-decoration: underline ;
+		}
+	}
+	
 }
