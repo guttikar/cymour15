@@ -1,16 +1,19 @@
 
+body {
+
+}
+
 .home {
 	width: 100%;
-	height: 100vh;
+	// height: 100vh;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;	
-	background: url(../img/home/home_bg.jpg) center center no-repeat;
+	// overflow: hidden;	
 }
 
 .banner {
 		display: block;
-		margin: 5em 12em 5em auto;
+		margin: 3em 12em 5em auto;
 		// border: 1px solid red;		  
 	}
 

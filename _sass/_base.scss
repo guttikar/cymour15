@@ -3,13 +3,16 @@
  * Basic styling
  */
 body {
+    position: absolute 0 0 0 0;
+    background-color: $background-color;
+    background: $background-image;
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+
 }
 
 
@@ -45,24 +48,5 @@ h1, h2, h3, h4, h5, h6 {
         content: "";
         display: table;
         clear: both;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
     }
 }
