@@ -1,12 +1,26 @@
 
 .rentals {
-	padding-left: 5%;
+	margin-right: 12em;
+	/*border: 1px solid blue;*/
+	position: relative;
+	overflow: hidden;
+	h1, h3 {
+		color: $brand-color;
+		text-align: center;
+	}
+
+	p {
+		font-size: 1.5em;
+		padding: 0 2em;
+		text-align: center;
+	}
+	background-color: rgba(0,0,0,0.5);
 }
 
 #rentals-map {
 	width: 40rem;
 	height: 70vh;
-	/*margin: 0 auto;*/
+	margin: 0 auto;
 }
 
 .infoBox {
