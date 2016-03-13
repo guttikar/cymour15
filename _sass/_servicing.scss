@@ -3,48 +3,56 @@
 	margin-right: 12em;
 	/*border: 1px solid blue;*/
 	position: relative;
-	
 	overflow: hidden;
-	h1 {
-		/*border: 1px red solid;*/
-		margin: 0.5em auto ;
-		text-align: center;
+	/*h1 {
+		
 		letter-spacing: 0.125em;
 	}
 
 	p {
 		text-align: center;
-		margin-bottom: 1em;
+		font-size: 1.25em;
 	}
-
+*/
 	.banner {
+		text-align: center;
 		position: relative;
 		float: left;
-		margin-top: 1em;
+		margin-top: 3em;
 		left: 50%;
 		transform: translateX(-50%);
 		/*border: 1px solid yellow;*/
-		color: $brand-color;
-		padding: 0 0.25em;
-		
-	}
-	.serviceplans {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
 	
+		h1{
+			color: $brand-color;
+			/*padding: 0 0.25em;*/
+		}
+		p {
+			font-size: 1.5em;
+		}
 	}
+	
+	.serviceplans {
+		clear: both;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		/*border: 1px solid red;*/
+	}
+
 	.servicetype {
 		/*border: 1px solid red;*/
-		margin-top: 1em;
+		/*margin-top: 1em;*/
 		padding: 1em;
 		width: 20em;
 		background: rgba(0,0,0,0.3);
-	}
-	ul {
+
+		ul {
 		list-style-type: square;
 		li {
 			margin-left: 1em;
 		}
 	}
+	}
+	
 }
