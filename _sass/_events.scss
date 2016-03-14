@@ -6,19 +6,15 @@
 	overflow: hidden;
 	margin-top: 3em;
 	padding-bottom: 6em;
-	h1 {
+	h1, h2 {
 		color: $brand-color;
 		text-align: center;
 	}
 
 	p {
 		font-size: 1.5em;
-		padding: 0 2em;
+		padding: 0 2em 1em 2em;
 		text-align: center;
-	}
-
-	img {
-		padding: 2em;
 	}
 }
 .eventscontainer {
@@ -30,7 +26,10 @@
 .eventbox {
 	padding: 1em;
 	width: 20em;
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.8);
+	box-shadow: 1em 1em 1em rgba(0,0,0,0.9);
+
+	font-size: 1.125em;
 
 	ul {
 	list-style-type: square;
