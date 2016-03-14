@@ -6,7 +6,28 @@ bgimage: rentals/rentals_bg.jpg) no-repeat 100% 0
 ---
 <section class="rentals">
 	<h1>Rent a Bicycle</h1>
-	<p>We currently rent bicycles from 5 locations in Pune. To check availability of bicycles please click on the location in the map.</p>
+	<p>We currently rent bicycles from 3 locations in Pune.<br>
+	To check availability of bicycles please call <a href="tel: {{site.phone}}">{{site.phone}}</a></p>
+	<div class="bicycleTypes">
+		<div class="type">
+			<h3>Beginners</h3>
+			<p>6 gears, btwin mybike</p>
+			<a href="{{site.baseurl}}/img/rentals/6gear_btwin.jpg" target="_blank"><img src="{{site.baseurl}}/img/rentals/6gear_btwin.jpg" alt=""></a>
+			<h3>Charges</h3>
+			<p>Monday-Thursday: Rs. 150/- </p>
+			<p>Friday-Sunday: Rs. 250/- </p>
+			<p>Total Quantity: 50 cycles</p>
+		</div>
+		<div class="type">
+			<h3>Advanced</h3>
+			<p>21 gears, Schell Dynamic 0.5</p>
+			<a href="{{site.baseurl}}/img/rentals/21gear_dynamic.jpg" target="_blank"><img src="{{site.baseurl}}/img/rentals/21gear_dynamic.jpg" alt=""></a>
+			<h3>Charges</h3>
+			<p>Monday-Thursday: Rs. 250/- </p>
+			<p>Friday-Sunday: Rs. 350/- </p>
+			<p>Total Quantity: 50 cycles</p>
+		</div>
+	</div>
 	<!-- <div class="howtorent">
 		<ul>
 			<li>Choose A Rental station</li>
@@ -19,8 +40,10 @@ bgimage: rentals/rentals_bg.jpg) no-repeat 100% 0
 		 	<li class="steps"></li>
 		 </ul> 
 	</div> -->
-	<h3>Cymour Cycle Rental Locations</h3> 
-	<div id="rentals-map"></div>
+	<!-- <h3>Cymour Cycle Rental Locations</h3> 
+	<div id="rentals-map"></div> -->
+	<!-- <div id="stationInfo"></div> -->
+
 
 	
 </section>
