@@ -1,6 +1,8 @@
 
 .rentals {
 	margin-right: 12em;
+	padding-top: 3em;
+	padding-bottom: 6em;
 	/*border: 1px solid blue;*/
 	position: relative;
 	overflow: hidden;
@@ -13,14 +15,17 @@
 		font-size: 1.5em;
 		padding: 0 2em;
 		text-align: center;
+		a {
+			color: $brand-color;
+		}
 	}
 	background-color: rgba(0,0,0,0.5);
 }
 
 #rentals-map {
-	width: 40rem;
+	width: 40em;
 	height: 70vh;
-	margin: 0 auto;
+	margin-left: 3em;
 }
 
 .infoBox {
@@ -37,23 +42,21 @@
 	// opacity: 0.9;      
 	/*border: 1px solid blue;*/
 	color: #333;
-}
 
-
-.availability h2 {
+	h2 {
 	background: #555;
 	color: #fff;
 	text-align: center;
 	padding: 0 0 0.25em 0.125em;
 	margin: 0;
-	
-}
+	}
 
-.availability p {
+	p {
 	font-weight: bold;
 	text-transform: uppercase;
-	
-} 
+	} 
+}
+
 
 .week {
 		display: flex;
@@ -61,10 +64,43 @@
 		        justify-content: space-around;
 		/*border: 1px solid red;*/
 }
-.day > p {
+.day {
+	> p {
 	text-align: right;
-}
-.day > h4 {
+	}
+	> h4 {
 	text-transform: uppercase;
 	text-align: center;
+	}
+}
+#stationInfo {
+	position: absolute;
+	top: 10em;
+	right: 5em;
+	width: 15em;
+	min-height: 20em;
+	background: rgba(0,0,0,0.7);
+	border: 1px solid red;
+}
+
+.bicycleTypes {
+	clear: both;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-top: 1em;
+}
+
+.type {
+	padding: 1em;
+	width: 20em;
+	background: rgba(0,0,0,0.5);
+	box-shadow: 1em 1em 1em rgba(0,0,0,0.4);
+	p {
+		padding: 0;
+	}
+	img {
+		margin-bottom: 1em;
+	}
+
 }
