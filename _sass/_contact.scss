@@ -1,0 +1,33 @@
+.contactus {
+	margin-right: 12em;
+	padding-top: 3em;
+	padding-bottom: 6em;
+	/*border: 1px solid blue;*/
+	position: relative;
+	overflow: hidden;
+	h1, h2 {
+		color: $brand-color;
+		text-align: center;
+	}
+}
+
+.offices {
+	clear: both;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-top: 1em;
+}
+
+.location {
+	padding: 1em;
+	margin: 2em;
+	width: 23em;
+	background: rgba(0,0,0,0.5);
+	box-shadow: 1em 1em 1em rgba(0,0,0,0.4);
+
+}
+
+address {
+	font-size: 1.125em;
+}
