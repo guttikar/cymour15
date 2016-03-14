@@ -4,6 +4,7 @@
 	/*border: 1px solid blue;*/
 	position: relative;
 	overflow: hidden;
+	padding-bottom: 6em;
 	/*h1 {
 		
 		letter-spacing: 0.125em;
@@ -14,6 +15,12 @@
 		font-size: 1.25em;
 	}
 */
+	.imgbox {
+		margin: 0 6em 1em 6em;
+		box-shadow: 1em 1em 1em rgba(0,0,0,0.7);
+		/*border: 1px solid red;*/
+		clear: both;
+	}
 	.banner {
 		text-align: center;
 		position: relative;
@@ -22,7 +29,7 @@
 		left: 50%;
 		transform: translateX(-50%);
 		/*border: 1px solid yellow;*/
-	
+		margin-bottom: 1em;
 		h1{
 			color: $brand-color;
 			/*padding: 0 0.25em;*/
@@ -45,14 +52,15 @@
 		/*margin-top: 1em;*/
 		padding: 1em;
 		width: 20em;
-		background: rgba(0,0,0,0.3);
-
+		background: rgba(0,0,0,0.8);
+		box-shadow: 1em 1em 1em rgba(0,0,0,0.7);
 		ul {
 		list-style-type: square;
-		li {
-			margin-left: 1em;
+			li {
+				margin-left: 1em;
+				font-size: 1.125em;
+			}
 		}
-	}
 	}
 	
 }
