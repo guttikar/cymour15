@@ -8,6 +8,10 @@
 	overflow: hidden;
 	background-color: rgba(0,0,0,0.5);
 	
+	@include media($tablet) {
+		margin-right: 0;
+	}
+	
 	h1, h2 {
 		color: $brand-color;
 		text-align: center;

@@ -6,6 +6,10 @@
 	overflow: hidden;
 	padding-bottom: 6em;
 	
+	@include media($tablet) {
+		margin-right: 0;
+	}
+	
 	h1, h2 {
 		color: $brand-color;
 		text-align: center;

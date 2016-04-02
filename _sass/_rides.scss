@@ -5,6 +5,11 @@
 	/*border: 1px solid blue;*/
 	position: relative;
 	overflow: hidden;
+
+	@include media($tablet) {
+		margin-right: 0;
+	}
+	
 	h1, h3 {
 		color: $brand-color;
 		text-align: center;
