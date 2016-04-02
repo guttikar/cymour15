@@ -5,6 +5,7 @@
 	position: relative;
 	overflow: hidden;
 	padding-bottom: 6em;
+	padding-top: 3em;
 	
 	@include media($tablet) {
 		margin-right: 0;
