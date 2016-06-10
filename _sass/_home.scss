@@ -83,27 +83,41 @@ body {
 	// overflow: hidden;
 	li {
 		width: 25%;
-		padding-top: 25%;
 		position: relative; 
-		// overflow: hidden;
+		/*overflow: hidden;*/
 		text-align: center;
-		div, a {
+		a {
 			position: absolute;
 			left:0;
+			margin-top: 25%;
 			width: 100%;
+			height: 100%;
+			display: block;
 			
 		}
 		div {
+			position: absolute;
 			top: 0;
-			height: 100%;
-			background: url(../img/home/tire.svg) no-repeat 0 0;
+			
+			/*height: 100%;
+			width: 100%;*/
+			padding: 50%; 
+			background-image: url(../img/home/tire.svg);
+			background-repeat: no-repeat;
+			background-position: center center;
 			-webkit-background-size: contain;
 			-o-background-size: contain;
 			background-size: contain;
 			// -webkit-box-shadow: rgba(0,0,0,0.9); 
 			//  box-shadow: rgba(0,0,0,0.9);  
-			// border: 1px solid yellow;
+			/*border: 1px solid yellow;*/
+
 		}
+		/*div:after {
+			content: "";
+			display: table;
+			clear: both;
+		}*/
 		
 		a {
 			top: 50%;
