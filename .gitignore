@@ -1,3 +1,7 @@
 _site/
 .sass-cache/
 _sass/neat/settings/_visual-grid.scss
+
+*.duck
+
+img/rentals/image1.JPG
