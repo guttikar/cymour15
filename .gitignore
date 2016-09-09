@@ -6,3 +6,5 @@ _sass/neat/settings/_visual-grid.scss
 
 
 img/storage/*
+
+.DS_Store
